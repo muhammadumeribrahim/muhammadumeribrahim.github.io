@@ -7,7 +7,7 @@
   <meta name="description" content="Muhammad Umer — web tech, data checks, and client delivery. HTML/CSS/JS, WordPress/Drupal, React+TS, SQL basics, GTM/GA4, Agile/Scrum." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Serif:wght@500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="stylesheet" href="css/animations.css" />
 </head>
@@ -29,34 +29,42 @@
   </header>
 
   <main id="home">
-    <!-- HERO -->
-    <section class="hero container section-entrance" data-animate="fadeInUp">
-      <div class="hero-left">
-        <h1 class="title-xl serif">Muhammad Umer</h1>
-        <p class="lead">Web • Data • Client Operations</p>
-        <p class="muted">
-          Detail-oriented new grad who bridges web tech, basic data checks, and client goals.
-          Hands-on with HTML/CSS/JS, SQL validations, CMS builds (WordPress/Drupal), React + TypeScript,
-          GTM/GA4, and first-principles troubleshooting.
-        </p>
-        <div class="hero-actions">
-          <a href="#projects" class="btn btn-solid">View Work</a>
-          <a href="#contact" class="btn btn-ghost">Contact</a>
-        </div>
+    <!-- HERO (light, elegant, with subtle tech animation background) -->
+    <section class="hero">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="tech-grid"></div>
+        <div class="tech-dots"></div>
       </div>
-      <aside class="hero-aside">
-        <div class="aside-card">
-          <div class="row"><span class="k">Location</span><span class="v">Chicago, IL</span></div>
-          <div class="row"><span class="k">Status</span><span class="v">EAD • OPT/STEM-OPT</span></div>
-          <div class="row"><span class="k">Availability</span><span class="v">No sponsorship (2025–2028)</span></div>
+
+      <div class="container hero-inner section-entrance" data-animate="fadeInUp">
+        <div class="hero-left">
+          <h1 class="title-xl">Muhammad Umer</h1>
+          <p class="lead">Web • Data • Client Operations</p>
+          <p class="muted">
+            Detail-oriented new grad who bridges web tech, basic data checks, and client goals.
+            Hands-on with HTML/CSS/JS, SQL validations, CMS builds (WordPress/Drupal), React + TypeScript,
+            GTM/GA4, and first-principles troubleshooting.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-solid">View Work</a>
+            <a href="#contact" class="btn btn-ghost">Contact</a>
+          </div>
         </div>
-      </aside>
+
+        <aside class="hero-aside">
+          <div class="aside-card">
+            <div class="row"><span class="k">Location</span><span class="v">Chicago, IL</span></div>
+            <div class="row"><span class="k">Status</span><span class="v">EAD • OPT/STEM-OPT</span></div>
+            <div class="row"><span class="k">Availability</span><span class="v">No sponsorship (2025–2028)</span></div>
+          </div>
+        </aside>
+      </div>
     </section>
 
     <!-- ABOUT -->
     <section id="about" class="section container">
       <div class="section-head">
-        <h2 class="section-title serif">About</h2>
+        <h2 class="section-title">About</h2>
         <div class="rule"></div>
       </div>
       <div class="cols-2">
@@ -84,7 +92,7 @@
     <!-- SKILLS -->
     <section id="skills" class="section container">
       <div class="section-head">
-        <h2 class="section-title serif">Core Skills</h2>
+        <h2 class="section-title">Core Skills</h2>
         <div class="rule"></div>
       </div>
       <div class="grid-3" data-animate="stagger">
@@ -130,7 +138,7 @@
     <!-- EXPERIENCE -->
     <section id="experience" class="section container">
       <div class="section-head">
-        <h2 class="section-title serif">Experience</h2>
+        <h2 class="section-title">Experience</h2>
         <div class="rule"></div>
       </div>
       <div class="stack">
@@ -204,7 +212,7 @@
     <!-- PROJECTS -->
     <section id="projects" class="section container">
       <div class="section-head">
-        <h2 class="section-title serif">Projects</h2>
+        <h2 class="section-title">Projects</h2>
         <div class="rule"></div>
       </div>
       <div class="grid-3">
@@ -229,17 +237,15 @@
     <!-- EDUCATION -->
     <section id="education" class="section container">
       <div class="section-head">
-        <h2 class="section-title serif">Education</h2>
+        <h2 class="section-title">Education</h2>
         <div class="rule"></div>
       </div>
       <div class="edu">
-        <div class="edu-main">
-          <div class="line"><span class="inst">DePaul University</span><span class="meta">Chicago, IL</span></div>
-          <div class="line"><span class="deg">B.S., Information Technology</span><span class="meta">Minor: Information Systems</span></div>
-          <div class="facts">
-            <div><span class="k">Graduated</span><span class="v">June 2025</span></div>
-            <div><span class="k">GPA</span><span class="v">3.44</span></div>
-          </div>
+        <div class="line"><span class="inst">DePaul University</span><span class="meta">Chicago, IL</span></div>
+        <div class="line"><span class="deg">B.S., Information Technology</span><span class="meta">Minor: Information Systems</span></div>
+        <div class="facts">
+          <div><span class="k">Graduated</span><span class="v">June 2025</span></div>
+          <div><span class="k">GPA</span><span class="v">3.44</span></div>
         </div>
         <div class="badges">
           <span class="badge">Dean’s List — Winter 2023</span>
@@ -253,7 +259,7 @@
     <!-- CONTACT -->
     <section id="contact" class="section container">
       <div class="section-head">
-        <h2 class="section-title serif">Contact</h2>
+        <h2 class="section-title">Contact</h2>
         <div class="rule"></div>
       </div>
       <p class="muted center">
@@ -261,18 +267,9 @@
         Available for stakeholder calls, onboarding, release windows, and occasional off-hours cutovers.
       </p>
       <div class="contact-grid">
-        <div class="contact-card">
-          <div class="ck">Email</div>
-          <a class="cv" href="mailto:umeribrahimumer@hotmail.com">umeribrahimumer@hotmail.com</a>
-        </div>
-        <div class="contact-card">
-          <div class="ck">Phone</div>
-          <a class="cv" href="tel:+12246250528">(224) 625-0528</a>
-        </div>
-        <div class="contact-card">
-          <div class="ck">Location</div>
-          <div class="cv">Chicago, IL • Open to Relocate</div>
-        </div>
+        <div class="contact-card"><div class="ck">Email</div><a class="cv" href="mailto:umeribrahimumer@hotmail.com">umeribrahimumer@hotmail.com</a></div>
+        <div class="contact-card"><div class="ck">Phone</div><a class="cv" href="tel:+12246250528">(224) 625-0528</a></div>
+        <div class="contact-card"><div class="ck">Location</div><div class="cv">Chicago, IL • Open to Relocate</div></div>
       </div>
     </section>
   </main>
@@ -285,6 +282,3 @@
   <script src="js/animations.js"></script>
 </body>
 </html>
-
-
-
