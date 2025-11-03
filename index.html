@@ -4,10 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Muhammad Umer — Web • Data • Client Ops</title>
-  <meta name="description" content="Muhammad Umer — new grad who bridges web tech, data checks, and client delivery. HTML/CSS/JS, WordPress/Drupal, React+TS, SQL basics, GTM/GA4, Agile/Scrum." />
+  <meta name="description" content="Muhammad Umer — web tech, data checks, and client delivery. HTML/CSS/JS, WordPress/Drupal, React+TS, SQL basics, GTM/GA4, Agile/Scrum." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Serif:wght@500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="stylesheet" href="css/animations.css" />
 </head>
@@ -29,10 +29,10 @@
   </header>
 
   <main id="home">
-    <!-- HERO: left-aligned, dark, minimal -->
+    <!-- HERO -->
     <section class="hero container section-entrance" data-animate="fadeInUp">
       <div class="hero-left">
-        <h1 class="title-xl">Muhammad Umer</h1>
+        <h1 class="title-xl serif">Muhammad Umer</h1>
         <p class="lead">Web • Data • Client Operations</p>
         <p class="muted">
           Detail-oriented new grad who bridges web tech, basic data checks, and client goals.
@@ -40,28 +40,25 @@
           GTM/GA4, and first-principles troubleshooting.
         </p>
         <div class="hero-actions">
-          <a href="#projects" class="btn btn-dark">View Work</a>
-          <a href="#contact" class="btn btn-outline">Contact</a>
+          <a href="#projects" class="btn btn-solid">View Work</a>
+          <a href="#contact" class="btn btn-ghost">Contact</a>
         </div>
       </div>
-      <div class="hero-right">
-        <div class="bio-card">
-          <div class="row">
-            <span class="key">Location</span><span class="val">Chicago, IL</span>
-          </div>
-          <div class="row">
-            <span class="key">Status</span><span class="val">EAD • OPT/STEM-OPT</span>
-          </div>
-          <div class="row">
-            <span class="key">Availability</span><span class="val">No sponsorship needed (2025–2028)</span>
-          </div>
+      <aside class="hero-aside">
+        <div class="aside-card">
+          <div class="row"><span class="k">Location</span><span class="v">Chicago, IL</span></div>
+          <div class="row"><span class="k">Status</span><span class="v">EAD • OPT/STEM-OPT</span></div>
+          <div class="row"><span class="k">Availability</span><span class="v">No sponsorship (2025–2028)</span></div>
         </div>
-      </div>
+      </aside>
     </section>
 
     <!-- ABOUT -->
     <section id="about" class="section container">
-      <h2 class="section-title">About</h2>
+      <div class="section-head">
+        <h2 class="section-title serif">About</h2>
+        <div class="rule"></div>
+      </div>
       <div class="cols-2">
         <div>
           <p class="body">
@@ -77,82 +74,52 @@
           </p>
         </div>
         <aside class="stats">
-          <div class="stat">
-            <div class="stat-num">3.44</div>
-            <div class="stat-label">GPA</div>
-          </div>
-          <div class="stat">
-            <div class="stat-num">4×</div>
-            <div class="stat-label">Dean’s List</div>
-          </div>
-          <div class="stat">
-            <div class="stat-num">Web·Data·Ops</div>
-            <div class="stat-label">Focus</div>
-          </div>
+          <div class="stat"><div class="num">3.44</div><div class="lab">GPA</div></div>
+          <div class="stat"><div class="num">4×</div><div class="lab">Dean’s List</div></div>
+          <div class="stat"><div class="num">Web · Data · Ops</div><div class="lab">Focus</div></div>
         </aside>
       </div>
     </section>
 
     <!-- SKILLS -->
     <section id="skills" class="section container">
-      <h2 class="section-title">Core Skills</h2>
-      <div class="skill-grid" data-animate="stagger">
+      <div class="section-head">
+        <h2 class="section-title serif">Core Skills</h2>
+        <div class="rule"></div>
+      </div>
+      <div class="grid-3" data-animate="stagger">
         <div class="card">
-          <div class="card-head">
-            <svg class="ic" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3.5 3 14 0 18M12 3c-3 3.5-3 14 0 18"/></svg>
-            <h3>Web</h3>
-          </div>
+          <h3 class="card-title">Web</h3>
           <ul class="tags">
             <li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>WordPress</li><li>Elementor</li><li>Drupal</li><li>React</li><li>TypeScript</li>
           </ul>
         </div>
-
         <div class="card">
-          <div class="card-head">
-            <svg class="ic" viewBox="0 0 24 24"><ellipse cx="12" cy="6" rx="7" ry="3.5"/><path d="M5 6v6c0 1.9 3.1 3.5 7 3.5s7-1.6 7-3.5V6"/><path d="M5 12v6c0 1.9 3.1 3.5 7 3.5s7-1.6 7-3.5v-6"/></svg>
-            <h3>Data & SQL</h3>
-          </div>
+          <h3 class="card-title">Data & SQL</h3>
           <ul class="tags">
             <li>SELECT/JOIN</li><li>Filters</li><li>De-dup</li><li>Sanity Checks</li><li>CSV/JSON Exports</li><li>Basic Feeds</li>
           </ul>
         </div>
-
         <div class="card">
-          <div class="card-head">
-            <svg class="ic" viewBox="0 0 24 24"><path d="M4 19V5M20 19H4"/><rect x="6" y="12" width="3" height="5"/><rect x="11" y="9" width="3" height="8"/><rect x="16" y="7" width="3" height="10"/></svg>
-            <h3>Tagging & Analytics</h3>
-          </div>
+          <h3 class="card-title">Tagging & Analytics</h3>
           <ul class="tags">
             <li>GTM</li><li>GA4 Events</li><li>DevTools Validation</li><li>UTM Standards</li><li>QA Checklists</li>
           </ul>
         </div>
-
         <div class="card">
-          <div class="card-head">
-            <svg class="ic" viewBox="0 0 24 24"><rect x="3" y="8" width="18" height="10" rx="2"/><path d="M9 8V6a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/><path d="M3 12h18"/></svg>
-            <h3>Tools</h3>
-          </div>
+          <h3 class="card-title">Tools</h3>
           <ul class="tags">
             <li>GitHub</li><li>Trello</li><li>Jira</li><li>Freshdesk</li><li>ServiceNow</li><li>1Password</li><li>Visio</li>
           </ul>
         </div>
-
         <div class="card">
-          <div class="card-head">
-            <svg class="ic" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M10 14l2-6 2 2-2 6-2-2z"/></svg>
-            <h3>Process</h3>
-          </div>
+          <h3 class="card-title">Process</h3>
           <ul class="tags">
-            <li>Agile/Scrum</li><li>Standups</li><li>Sprint Planning</li>
-            <li>Backlog Grooming</li><li>Retros</li><li>Release Notes</li><li>Ticket AC</li>
+            <li>Agile/Scrum</li><li>Standups</li><li>Sprint Planning</li><li>Backlog Grooming</li><li>Retros</li><li>Release Notes</li><li>Ticket AC</li>
           </ul>
         </div>
-
         <div class="card">
-          <div class="card-head">
-            <svg class="ic" viewBox="0 0 24 24"><path d="M7 12l3 3a2 2 0 0 0 3 0l4-4"/><path d="M3 12l4-4a2 2 0 0 1 3 0l1 1m10 3l-2-2a2 2 0 0 0-3 0l-1 1"/></svg>
-            <h3>Soft Skills</h3>
-          </div>
+          <h3 class="card-title">Soft Skills</h3>
           <ul class="tags">
             <li>Client Requirements</li><li>Status & Demos</li><li>Expectation Mgmt</li><li>Clear Docs</li><li>Fast Learner</li>
           </ul>
@@ -162,15 +129,20 @@
 
     <!-- EXPERIENCE -->
     <section id="experience" class="section container">
-      <h2 class="section-title">Experience</h2>
-      <div class="timeline">
-        <article class="t-item" data-animate="fadeInUp">
-          <div class="t-meta">
-            <span class="t-period">Aug 2025 – Present</span>
-            <span class="t-company">RTS Logic — Irvine, CA (Remote)</span>
-          </div>
-          <h3 class="t-role">IT Support & Website Developer</h3>
-          <ul class="t-list">
+      <div class="section-head">
+        <h2 class="section-title serif">Experience</h2>
+        <div class="rule"></div>
+      </div>
+      <div class="stack">
+        <article class="item" data-animate="fadeInUp">
+          <header class="item-head">
+            <div class="meta">
+              <span class="period">Aug 2025 – Present</span>
+              <span class="company">RTS Logic — Irvine, CA (Remote)</span>
+            </div>
+            <h3 class="role">IT Support & Website Developer</h3>
+          </header>
+          <ul class="bullets">
             <li>Met with clients to gather requirements, confirm scope/assets, and provide status updates and demos.</li>
             <li>Built and updated WordPress/Elementor sites with custom HTML/CSS/JS; ensured responsive, consistent navigation.</li>
             <li>Handled Freshdesk/ServiceNow tickets, tracked SLAs, documented fixes, and communicated in non-technical terms.</li>
@@ -181,13 +153,15 @@
           </ul>
         </article>
 
-        <article class="t-item" data-animate="fadeInUp">
-          <div class="t-meta">
-            <span class="t-period">Sep 2025 – Present</span>
-            <span class="t-company">Azophi Solutions — Chicago, IL (Remote)</span>
-          </div>
-          <h3 class="t-role">Website Specialist & IT Support</h3>
-          <ul class="t-list">
+        <article class="item" data-animate="fadeInUp">
+          <header class="item-head">
+            <div class="meta">
+              <span class="period">Sep 2025 – Present</span>
+              <span class="company">Azophi Solutions — Chicago, IL (Remote)</span>
+            </div>
+            <h3 class="role">Website Specialist & IT Support</h3>
+          </header>
+          <ul class="bullets">
             <li>Maintained a React + TypeScript site on Netlify with timely component/content updates and thorough QA.</li>
             <li>Shared update notes and timelines; converted feedback into actionable GitHub issues.</li>
             <li>Provided Freshdesk support; validated analytics/lead tables via basic SQL or spreadsheet filters.</li>
@@ -196,26 +170,30 @@
           </ul>
         </article>
 
-        <article class="t-item" data-animate="fadeInUp">
-          <div class="t-meta">
-            <span class="t-period">Sep 2024 – Dec 2024</span>
-            <span class="t-company">National STEM Honor Society (NSTEM) — Gloucester, MA (Remote)</span>
-          </div>
-          <h3 class="t-role">Website & Technology Intern</h3>
-          <ul class="t-list">
+        <article class="item" data-animate="fadeInUp">
+          <header class="item-head">
+            <div class="meta">
+              <span class="period">Sep 2024 – Dec 2024</span>
+              <span class="company">National STEM Honor Society (NSTEM) — Gloucester, MA (Remote)</span>
+            </div>
+            <h3 class="role">Website & Technology Intern</h3>
+          </header>
+          <ul class="bullets">
             <li>Built and maintained Drupal/WordPress pages and forms; updated media, menus, and internal links.</li>
             <li>Set up simple tracking conventions (UTMs, link standards) and authored QA checklists.</li>
             <li>Managed tasks in Trello and provided concise status updates to comms/marketing teams.</li>
           </ul>
         </article>
 
-        <article class="t-item" data-animate="fadeInUp">
-          <div class="t-meta">
-            <span class="t-period">Jun 2021 – Jan 2022</span>
-            <span class="t-company">Dawood RCC Pipe — Karachi, Pakistan</span>
-          </div>
-          <h3 class="t-role">Technology Co-op</h3>
-          <ul class="t-list">
+        <article class="item" data-animate="fadeInUp">
+          <header class="item-head">
+            <div class="meta">
+              <span class="period">Jun 2021 – Jan 2022</span>
+              <span class="company">Dawood RCC Pipe — Karachi, Pakistan</span>
+            </div>
+            <h3 class="role">Technology Co-op</h3>
+          </header>
+          <ul class="bullets">
             <li>Delivered desktop setup/troubleshooting and short user trainings with mini how-to guides.</li>
             <li>Improved data hygiene and shared-drive organization; validated spreadsheets with basic checks.</li>
           </ul>
@@ -225,62 +203,45 @@
 
     <!-- PROJECTS -->
     <section id="projects" class="section container">
-      <h2 class="section-title">Projects</h2>
-      <div class="projects">
-        <article class="p-card" data-animate="fadeInUp">
-          <header class="p-head">
-            <h3>React + TS Site on Netlify</h3>
-            <span>Website Specialist</span>
-          </header>
-          <p>Componentized UI updates, preview-to-prod workflows, and checklist-driven QA with GitHub issues and PRs.</p>
-          <ul class="tags compact">
-            <li>React</li><li>TypeScript</li><li>Netlify</li><li>GitHub</li>
-          </ul>
+      <div class="section-head">
+        <h2 class="section-title serif">Projects</h2>
+        <div class="rule"></div>
+      </div>
+      <div class="grid-3">
+        <article class="card" data-animate="fadeInUp">
+          <h3 class="card-title">React + TS Site on Netlify</h3>
+          <p class="body">Componentized UI updates, preview-to-prod workflows, and checklist-driven QA with GitHub issues and PRs.</p>
+          <ul class="tags compact"><li>React</li><li>TypeScript</li><li>Netlify</li><li>GitHub</li></ul>
         </article>
-
-        <article class="p-card" data-animate="fadeInUp">
-          <header class="p-head">
-            <h3>WordPress/Elementor Enhancements</h3>
-            <span>Developer</span>
-          </header>
-          <p>Reusable sections, clean navigation, forms with CSV/JSON exports, and basic SQL validations before CRM handoff.</p>
-          <ul class="tags compact">
-            <li>WordPress</li><li>Elementor</li><li>HTML/CSS/JS</li><li>SQL</li>
-          </ul>
+        <article class="card" data-animate="fadeInUp">
+          <h3 class="card-title">WordPress/Elementor Enhancements</h3>
+          <p class="body">Reusable sections, clean navigation, forms with CSV/JSON exports, and basic SQL validations before CRM handoff.</p>
+          <ul class="tags compact"><li>WordPress</li><li>Elementor</li><li>HTML/CSS/JS</li><li>SQL</li></ul>
         </article>
-
-        <article class="p-card" data-animate="fadeInUp">
-          <header class="p-head">
-            <h3>QA & Tagging Starter</h3>
-            <span>Analyst</span>
-          </header>
-          <p>GA4 event conventions, UTMs, and DevTools checks with a simple test plan for links, forms, and alt text.</p>
-          <ul class="tags compact">
-            <li>GTM</li><li>GA4</li><li>Checklists</li><li>DevTools</li>
-          </ul>
+        <article class="card" data-animate="fadeInUp">
+          <h3 class="card-title">QA & Tagging Starter</h3>
+          <p class="body">GA4 event conventions, UTMs, and DevTools checks with a simple test plan for links, forms, and alt text.</p>
+          <ul class="tags compact"><li>GTM</li><li>GA4</li><li>Checklists</li><li>DevTools</li></ul>
         </article>
       </div>
     </section>
 
     <!-- EDUCATION -->
     <section id="education" class="section container">
-      <h2 class="section-title">Education</h2>
+      <div class="section-head">
+        <h2 class="section-title serif">Education</h2>
+        <div class="rule"></div>
+      </div>
       <div class="edu">
         <div class="edu-main">
-          <div class="edu-line">
-            <span class="edu-inst">DePaul University</span>
-            <span class="edu-meta">Chicago, IL</span>
-          </div>
-          <div class="edu-line">
-            <span class="edu-degree">B.S., Information Technology</span>
-            <span class="edu-meta">Minor: Information Systems</span>
-          </div>
-          <div class="edu-facts">
+          <div class="line"><span class="inst">DePaul University</span><span class="meta">Chicago, IL</span></div>
+          <div class="line"><span class="deg">B.S., Information Technology</span><span class="meta">Minor: Information Systems</span></div>
+          <div class="facts">
             <div><span class="k">Graduated</span><span class="v">June 2025</span></div>
             <div><span class="k">GPA</span><span class="v">3.44</span></div>
           </div>
         </div>
-        <div class="edu-badges">
+        <div class="badges">
           <span class="badge">Dean’s List — Winter 2023</span>
           <span class="badge">Dean’s List — Winter 2024</span>
           <span class="badge">Dean’s List — Spring 2024</span>
@@ -291,39 +252,26 @@
 
     <!-- CONTACT -->
     <section id="contact" class="section container">
-      <h2 class="section-title">Contact</h2>
+      <div class="section-head">
+        <h2 class="section-title serif">Contact</h2>
+        <div class="rule"></div>
+      </div>
       <p class="muted center">
-        Authorized to work in the U.S. (valid EAD; F-1 OPT/STEM-OPT eligible).
-        No sponsorship needed 2025–2028. Available for stakeholder calls, onboarding, release windows,
-        and occasional off-hours cutovers.
+        Authorized to work in the U.S. (valid EAD; F-1 OPT/STEM-OPT eligible). No sponsorship needed 2025–2028.
+        Available for stakeholder calls, onboarding, release windows, and occasional off-hours cutovers.
       </p>
-      <div class="contact-cards">
-        <div class="c-card">
-          <div class="c-ic">
-            <svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
-          </div>
-          <div class="c-body">
-            <div class="c-k">Email</div>
-            <a class="c-v" href="mailto:umeribrahimumer@hotmail.com">umeribrahimumer@hotmail.com</a>
-          </div>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <div class="ck">Email</div>
+          <a class="cv" href="mailto:umeribrahimumer@hotmail.com">umeribrahimumer@hotmail.com</a>
         </div>
-        <div class="c-card">
-          <div class="c-ic">
-            <svg viewBox="0 0 24 24"><path d="M6 3h3l2 4-2 2a12 12 0 0 0 7 7l2-2 4 2v3a2 2 0 0 1-2 2 17 17 0 0 1-15-15 2 2 0 0 1 1-1.7z"/></svg>
-          </div>
-          <div class="c-body">
-            <div class="c-k">Phone</div>
-            <a class="c-v" href="tel:+12246250528">(224) 625-0528</a>
-          </div>
+        <div class="contact-card">
+          <div class="ck">Phone</div>
+          <a class="cv" href="tel:+12246250528">(224) 625-0528</a>
         </div>
-        <div class="c-card">
-          <div class="c-ic">
-            <svg viewBox="0 0 24 24"><path d="M12 21s-7-6.5-7-11a7 7 0 1 1 14 0c0 4.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
-          </div>
-          <div class="c-body">
-            <div class="c-k">Location</div>
-            <div class="c-v">Chicago, IL • Open to Relocate</div>
-          </div>
+        <div class="contact-card">
+          <div class="ck">Location</div>
+          <div class="cv">Chicago, IL • Open to Relocate</div>
         </div>
       </div>
     </section>
@@ -337,7 +285,6 @@
   <script src="js/animations.js"></script>
 </body>
 </html>
-
 
 
 
