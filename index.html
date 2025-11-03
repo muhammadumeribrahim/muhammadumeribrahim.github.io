@@ -2,370 +2,327 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Muhammad Umer — Web • Data • Client Ops</title>
-  <meta name="description" content="Muhammad Umer — new grad who bridges web tech, data checks, and client delivery. HTML/CSS/JS, WordPress/Drupal, React+TS, basic SQL, GTM/GA4, Agile/Scrum." />
-  <link rel="stylesheet" href="css/styles.css" />
-  <link rel="stylesheet" href="css/animations.css" />
+  <meta name="description" content="Muhammad Umer — new grad who bridges web tech, data checks, and client delivery. HTML/CSS/JS, WordPress/Drupal, React+TS, SQL basics, GTM/GA4, Agile/Scrum." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/animations.css" />
 </head>
 <body>
   <header class="header">
-    <nav class="nav">
-      <div class="nav-brand">MU</div>
+    <nav class="nav container">
+      <a class="brand" href="#home" aria-label="Home">MU</a>
+      <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
       <ul class="nav-menu">
-        <li><a href="#home" class="nav-link">Home</a></li>
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#skills" class="nav-link">Skills</a></li>
-        <li><a href="#experience" class="nav-link">Experience</a></li>
-        <li><a href="#projects" class="nav-link">Projects</a></li>
-        <li><a href="#education" class="nav-link">Education</a></li>
-        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><a class="nav-link" href="#home">Home</a></li>
+        <li><a class="nav-link" href="#about">About</a></li>
+        <li><a class="nav-link" href="#skills">Skills</a></li>
+        <li><a class="nav-link" href="#experience">Experience</a></li>
+        <li><a class="nav-link" href="#projects">Projects</a></li>
+        <li><a class="nav-link" href="#education">Education</a></li>
+        <li><a class="nav-link" href="#contact">Contact</a></li>
       </ul>
-      <div class="nav-toggle"><span></span><span></span><span></span></div>
     </nav>
   </header>
 
-  <main>
-    <section id="home" class="hero">
-      <div class="hero-content">
-        <h1 class="hero-title">Muhammad Umer</h1>
-        <p class="hero-subtitle">Web • Data • Client Operations</p>
-        <p class="hero-description">
+  <main id="home">
+    <!-- HERO: left-aligned, dark, minimal -->
+    <section class="hero container section-entrance" data-animate="fadeInUp">
+      <div class="hero-left">
+        <h1 class="title-xl">Muhammad Umer</h1>
+        <p class="lead">Web • Data • Client Operations</p>
+        <p class="muted">
           Detail-oriented new grad who bridges web tech, basic data checks, and client goals.
-          Hands-on with HTML/CSS/JS, SQL for validations, CMS builds, React+TypeScript, and first-principles troubleshooting.
+          Hands-on with HTML/CSS/JS, SQL validations, CMS builds (WordPress/Drupal), React + TypeScript,
+          GTM/GA4, and first-principles troubleshooting.
         </p>
         <div class="hero-actions">
-          <a href="#projects" class="btn btn-primary">View My Work</a>
-          <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+          <a href="#projects" class="btn btn-dark">View Work</a>
+          <a href="#contact" class="btn btn-outline">Contact</a>
         </div>
       </div>
-      <div class="hero-visual">
-        <div class="floating-element"></div>
-        <div class="floating-element"></div>
-        <div class="floating-element"></div>
-      </div>
-    </section>
-
-    <section id="about" class="about section-entrance" data-animate="fadeInUp">
-      <div class="container">
-        <h2 class="section-title">About Me</h2>
-        <div class="about-grid">
-          <div class="about-content">
-            <p class="about-text">Graduated in June 2025 from DePaul University (B.S. Information Technology; minor in Information Systems). I build clean front-ends, keep content and data organized, and translate client requirements into shippable tasks.</p>
-            <p class="about-text">Comfortable across WordPress/Elementor and Drupal, modern JS, and React+TypeScript. I set up clear checklists, write concise status notes, and validate basic data flows before handoffs.</p>
-            <p class="about-text">I work in Agile/Scrum from intake to go-live, maintain client-specific configs, and document the essentials.</p>
+      <div class="hero-right">
+        <div class="bio-card">
+          <div class="row">
+            <span class="key">Location</span><span class="val">Chicago, IL</span>
           </div>
-          <div class="about-stats">
-            <div class="stat-card"><span class="stat-number">3.44</span><span class="stat-label">GPA</span></div>
-            <div class="stat-card"><span class="stat-number">4×</span><span class="stat-label">Dean's List</span></div>
-            <div class="stat-card"><span class="stat-number">Web • Data • Ops</span><span class="stat-label">Focus</span></div>
+          <div class="row">
+            <span class="key">Status</span><span class="val">EAD • OPT/STEM-OPT</span>
+          </div>
+          <div class="row">
+            <span class="key">Availability</span><span class="val">No sponsorship needed (2025–2028)</span>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="skills" class="skills" data-animate="stagger">
-      <div class="container">
-        <h2 class="section-title">Core Skills</h2>
-        <div class="skills-grid">
-          <div class="skill-category">
-            <div class="skill-icon">
-              <!-- globe/web -->
-              <svg class="icon" viewBox="0 0 24 24" fill="none">
-                <circle cx="12" cy="12" r="9" stroke="currentColor"/>
-                <path d="M3 12h18M12 3c3 3.5 3 14 0 18M12 3c-3 3.5-3 14 0 18" stroke="currentColor"/>
-              </svg>
-            </div>
-            <h3 class="skill-title">Web</h3>
-            <div class="skill-list">
-              <span class="skill-tag">HTML5</span>
-              <span class="skill-tag">CSS3</span>
-              <span class="skill-tag">JavaScript</span>
-              <span class="skill-tag">WordPress</span>
-              <span class="skill-tag">Elementor</span>
-              <span class="skill-tag">Drupal</span>
-              <span class="skill-tag">React</span>
-              <span class="skill-tag">TypeScript</span>
-            </div>
+    <!-- ABOUT -->
+    <section id="about" class="section container">
+      <h2 class="section-title">About</h2>
+      <div class="cols-2">
+        <div>
+          <p class="body">
+            Graduated in June 2025 from DePaul University (B.S. Information Technology; minor in Information Systems).
+            I build clean front-ends, keep content and data organized, and translate client requirements into shippable tasks.
+          </p>
+          <p class="body">
+            Comfortable across WordPress/Elementor and Drupal, modern JS, and React + TypeScript.
+            I set up clear checklists, write concise status notes, and validate basic data flows before handoffs.
+          </p>
+          <p class="body">
+            I work in Agile/Scrum from intake to go-live, maintain client-specific configs, and document the essentials.
+          </p>
+        </div>
+        <aside class="stats">
+          <div class="stat">
+            <div class="stat-num">3.44</div>
+            <div class="stat-label">GPA</div>
           </div>
+          <div class="stat">
+            <div class="stat-num">4×</div>
+            <div class="stat-label">Dean’s List</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">Web·Data·Ops</div>
+            <div class="stat-label">Focus</div>
+          </div>
+        </aside>
+      </div>
+    </section>
 
-          <div class="skill-category">
-            <div class="skill-icon">
-              <!-- database -->
-              <svg class="icon" viewBox="0 0 24 24" fill="none">
-                <ellipse cx="12" cy="6" rx="7" ry="3.5" stroke="currentColor"/>
-                <path d="M5 6v6c0 1.9 3.1 3.5 7 3.5s7-1.6 7-3.5V6" stroke="currentColor"/>
-                <path d="M5 12v6c0 1.9 3.1 3.5 7 3.5s7-1.6 7-3.5v-6" stroke="currentColor"/>
-              </svg>
-            </div>
-            <h3 class="skill-title">Data & SQL</h3>
-            <div class="skill-list">
-              <span class="skill-tag">SELECT/JOIN</span>
-              <span class="skill-tag">Filters</span>
-              <span class="skill-tag">De-dup</span>
-              <span class="skill-tag">Sanity Checks</span>
-              <span class="skill-tag">CSV/JSON Exports</span>
-              <span class="skill-tag">Basic Feeds</span>
-            </div>
+    <!-- SKILLS -->
+    <section id="skills" class="section container">
+      <h2 class="section-title">Core Skills</h2>
+      <div class="skill-grid" data-animate="stagger">
+        <div class="card">
+          <div class="card-head">
+            <svg class="ic" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3.5 3 14 0 18M12 3c-3 3.5-3 14 0 18"/></svg>
+            <h3>Web</h3>
           </div>
+          <ul class="tags">
+            <li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>WordPress</li><li>Elementor</li><li>Drupal</li><li>React</li><li>TypeScript</li>
+          </ul>
+        </div>
 
-          <div class="skill-category">
-            <div class="skill-icon">
-              <!-- chart -->
-              <svg class="icon" viewBox="0 0 24 24" fill="none">
-                <path d="M4 19V5M20 19H4" stroke="currentColor"/>
-                <rect x="6" y="12" width="3" height="5" stroke="currentColor"/>
-                <rect x="11" y="9" width="3" height="8" stroke="currentColor"/>
-                <rect x="16" y="7" width="3" height="10" stroke="currentColor"/>
-              </svg>
-            </div>
-            <h3 class="skill-title">Tagging & Analytics</h3>
-            <div class="skill-list">
-              <span class="skill-tag">GTM</span>
-              <span class="skill-tag">GA4 Events</span>
-              <span class="skill-tag">DevTools Validation</span>
-              <span class="skill-tag">UTM Standards</span>
-              <span class="skill-tag">QA Checklists</span>
-            </div>
+        <div class="card">
+          <div class="card-head">
+            <svg class="ic" viewBox="0 0 24 24"><ellipse cx="12" cy="6" rx="7" ry="3.5"/><path d="M5 6v6c0 1.9 3.1 3.5 7 3.5s7-1.6 7-3.5V6"/><path d="M5 12v6c0 1.9 3.1 3.5 7 3.5s7-1.6 7-3.5v-6"/></svg>
+            <h3>Data & SQL</h3>
           </div>
+          <ul class="tags">
+            <li>SELECT/JOIN</li><li>Filters</li><li>De-dup</li><li>Sanity Checks</li><li>CSV/JSON Exports</li><li>Basic Feeds</li>
+          </ul>
+        </div>
 
-          <div class="skill-category">
-            <div class="skill-icon">
-              <!-- toolbox -->
-              <svg class="icon" viewBox="0 0 24 24" fill="none">
-                <rect x="3" y="8" width="18" height="10" rx="2" stroke="currentColor"/>
-                <path d="M9 8V6a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2" stroke="currentColor"/>
-                <path d="M3 12h18" stroke="currentColor"/>
-              </svg>
-            </div>
-            <h3 class="skill-title">Tools</h3>
-            <div class="skill-list">
-              <span class="skill-tag">GitHub</span>
-              <span class="skill-tag">Trello</span>
-              <span class="skill-tag">Jira</span>
-              <span class="skill-tag">Freshdesk</span>
-              <span class="skill-tag">ServiceNow</span>
-              <span class="skill-tag">1Password</span>
-              <span class="skill-tag">Visio</span>
-            </div>
+        <div class="card">
+          <div class="card-head">
+            <svg class="ic" viewBox="0 0 24 24"><path d="M4 19V5M20 19H4"/><rect x="6" y="12" width="3" height="5"/><rect x="11" y="9" width="3" height="8"/><rect x="16" y="7" width="3" height="10"/></svg>
+            <h3>Tagging & Analytics</h3>
           </div>
+          <ul class="tags">
+            <li>GTM</li><li>GA4 Events</li><li>DevTools Validation</li><li>UTM Standards</li><li>QA Checklists</li>
+          </ul>
+        </div>
 
-          <div class="skill-category">
-            <div class="skill-icon">
-              <!-- compass/process -->
-              <svg class="icon" viewBox="0 0 24 24" fill="none">
-                <circle cx="12" cy="12" r="9" stroke="currentColor"/>
-                <path d="M10 14l2-6 2 2-2 6-2-2z" stroke="currentColor"/>
-              </svg>
-            </div>
-            <h3 class="skill-title">Process</h3>
-            <div class="skill-list">
-              <span class="skill-tag">Agile/Scrum</span>
-              <span class="skill-tag">Standups</span>
-              <span class="skill-tag">Sprint Planning</span>
-              <span class="skill-tag">Backlog Grooming</span>
-              <span class="skill-tag">Retros</span>
-              <span class="skill-tag">Release Notes</span>
-              <span class="skill-tag">Ticket AC</span>
-            </div>
+        <div class="card">
+          <div class="card-head">
+            <svg class="ic" viewBox="0 0 24 24"><rect x="3" y="8" width="18" height="10" rx="2"/><path d="M9 8V6a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/><path d="M3 12h18"/></svg>
+            <h3>Tools</h3>
           </div>
+          <ul class="tags">
+            <li>GitHub</li><li>Trello</li><li>Jira</li><li>Freshdesk</li><li>ServiceNow</li><li>1Password</li><li>Visio</li>
+          </ul>
+        </div>
 
-          <div class="skill-category">
-            <div class="skill-icon">
-              <!-- handshake -->
-              <svg class="icon" viewBox="0 0 24 24" fill="none">
-                <path d="M7 12l3 3a2 2 0 0 0 3 0l4-4" stroke="currentColor"/>
-                <path d="M3 12l4-4a2 2 0 0 1 3 0l1 1m10 3l-2-2a2 2 0 0 0-3 0l-1 1" stroke="currentColor"/>
-              </svg>
-            </div>
-            <h3 class="skill-title">Soft Skills</h3>
-            <div class="skill-list">
-              <span class="skill-tag">Client Requirements</span>
-              <span class="skill-tag">Status & Demos</span>
-              <span class="skill-tag">Expectation Mgmt</span>
-              <span class="skill-tag">Clear Docs</span>
-              <span class="skill-tag">Fast Learner</span>
-            </div>
+        <div class="card">
+          <div class="card-head">
+            <svg class="ic" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M10 14l2-6 2 2-2 6-2-2z"/></svg>
+            <h3>Process</h3>
           </div>
+          <ul class="tags">
+            <li>Agile/Scrum</li><li>Standups</li><li>Sprint Planning</li>
+            <li>Backlog Grooming</li><li>Retros</li><li>Release Notes</li><li>Ticket AC</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <div class="card-head">
+            <svg class="ic" viewBox="0 0 24 24"><path d="M7 12l3 3a2 2 0 0 0 3 0l4-4"/><path d="M3 12l4-4a2 2 0 0 1 3 0l1 1m10 3l-2-2a2 2 0 0 0-3 0l-1 1"/></svg>
+            <h3>Soft Skills</h3>
+          </div>
+          <ul class="tags">
+            <li>Client Requirements</li><li>Status & Demos</li><li>Expectation Mgmt</li><li>Clear Docs</li><li>Fast Learner</li>
+          </ul>
         </div>
       </div>
     </section>
 
-    <section id="experience" class="experience">
-      <div class="container">
-        <h2 class="section-title">Experience</h2>
-        <div class="timeline">
-          <div class="timeline-item" data-animate="slideInLeft" data-delay="0">
-            <div class="timeline-marker"></div>
-            <div class="timeline-content">
-              <div class="timeline-period">Aug 2025 – Present</div>
-              <h3 class="timeline-title">IT Support & Website Developer</h3>
-              <div class="timeline-company">RTS Logic — Irvine, CA (Remote)</div>
-              <ul class="timeline-achievements">
-                <li>Met with clients to gather requirements, confirm scope/assets, and provide status updates and demos.</li>
-                <li>Built and updated WordPress/Elementor sites with custom HTML/CSS/JS; ensured responsive, consistent navigation.</li>
-                <li>Handled Freshdesk/ServiceNow tickets, tracked SLAs, documented fixes, and communicated in non-technical terms.</li>
-                <li>Exported forms to CSV/JSON and ran basic SQL checks (de-dup, filters, simple joins) before CRM/import handoffs.</li>
-                <li>Created Visio network diagrams and assisted with IT equipment sourcing and setup guidance.</li>
-                <li>Worked in Scrum (standups, planning, grooming, reviews); maintained change logs and release notes.</li>
-                <li>Coordinated GitHub pushes/PRs for site updates across environments.</li>
-              </ul>
-            </div>
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section container">
+      <h2 class="section-title">Experience</h2>
+      <div class="timeline">
+        <article class="t-item" data-animate="fadeInUp">
+          <div class="t-meta">
+            <span class="t-period">Aug 2025 – Present</span>
+            <span class="t-company">RTS Logic — Irvine, CA (Remote)</span>
           </div>
+          <h3 class="t-role">IT Support & Website Developer</h3>
+          <ul class="t-list">
+            <li>Met with clients to gather requirements, confirm scope/assets, and provide status updates and demos.</li>
+            <li>Built and updated WordPress/Elementor sites with custom HTML/CSS/JS; ensured responsive, consistent navigation.</li>
+            <li>Handled Freshdesk/ServiceNow tickets, tracked SLAs, documented fixes, and communicated in non-technical terms.</li>
+            <li>Exported forms to CSV/JSON and ran basic SQL checks (de-dup, filters, simple joins) before CRM/import handoffs.</li>
+            <li>Created Visio network diagrams and assisted with IT equipment sourcing and setup guidance.</li>
+            <li>Worked in Scrum (standups, planning, grooming, reviews); maintained change logs and release notes.</li>
+            <li>Coordinated GitHub pushes/PRs for site updates across environments.</li>
+          </ul>
+        </article>
 
-          <div class="timeline-item" data-animate="slideInRight" data-delay="200">
-            <div class="timeline-marker"></div>
-            <div class="timeline-content">
-              <div class="timeline-period">Sep 2025 – Present</div>
-              <h3 class="timeline-title">Website Specialist & IT Support</h3>
-              <div class="timeline-company">Azophi Solutions — Chicago, IL (Remote)</div>
-              <ul class="timeline-achievements">
-                <li>Maintained a React + TypeScript site on Netlify with timely component/content updates and thorough QA.</li>
-                <li>Shared update notes/timelines with stakeholders and converted feedback into actionable GitHub issues.</li>
-                <li>Provided Freshdesk support; validated analytics/lead tables via basic SQL or spreadsheet filters.</li>
-                <li>Managed GitHub PRs and 1Password hygiene; aligned preview vs production configurations.</li>
-                <li>Tracked work in Trello/Jira; participated in standups and sprint reviews.</li>
-              </ul>
-            </div>
+        <article class="t-item" data-animate="fadeInUp">
+          <div class="t-meta">
+            <span class="t-period">Sep 2025 – Present</span>
+            <span class="t-company">Azophi Solutions — Chicago, IL (Remote)</span>
           </div>
+          <h3 class="t-role">Website Specialist & IT Support</h3>
+          <ul class="t-list">
+            <li>Maintained a React + TypeScript site on Netlify with timely component/content updates and thorough QA.</li>
+            <li>Shared update notes and timelines; converted feedback into actionable GitHub issues.</li>
+            <li>Provided Freshdesk support; validated analytics/lead tables via basic SQL or spreadsheet filters.</li>
+            <li>Managed GitHub PRs and 1Password hygiene; aligned preview vs production configurations.</li>
+            <li>Tracked work in Trello/Jira; participated in standups and sprint reviews.</li>
+          </ul>
+        </article>
 
-          <div class="timeline-item" data-animate="slideInLeft" data-delay="400">
-            <div class="timeline-marker"></div>
-            <div class="timeline-content">
-              <div class="timeline-period">Sep 2024 – Dec 2024</div>
-              <h3 class="timeline-title">Website & Technology Intern</h3>
-              <div class="timeline-company">National STEM Honor Society (NSTEM) — Gloucester, MA (Remote)</div>
-              <ul class="timeline-achievements">
-                <li>Built and maintained Drupal/WordPress pages and forms; updated media, menus, and internal links.</li>
-                <li>Set up simple tracking conventions (UTMs, link standards) and authored QA checklists.</li>
-                <li>Managed tasks in Trello and provided concise status updates to comms/marketing teams.</li>
-              </ul>
-            </div>
+        <article class="t-item" data-animate="fadeInUp">
+          <div class="t-meta">
+            <span class="t-period">Sep 2024 – Dec 2024</span>
+            <span class="t-company">National STEM Honor Society (NSTEM) — Gloucester, MA (Remote)</span>
           </div>
+          <h3 class="t-role">Website & Technology Intern</h3>
+          <ul class="t-list">
+            <li>Built and maintained Drupal/WordPress pages and forms; updated media, menus, and internal links.</li>
+            <li>Set up simple tracking conventions (UTMs, link standards) and authored QA checklists.</li>
+            <li>Managed tasks in Trello and provided concise status updates to comms/marketing teams.</li>
+          </ul>
+        </article>
 
-          <div class="timeline-item" data-animate="slideInRight" data-delay="600">
-            <div class="timeline-marker"></div>
-            <div class="timeline-content">
-              <div class="timeline-period">Jun 2021 – Jan 2022</div>
-              <h3 class="timeline-title">Technology Co-op</h3>
-              <div class="timeline-company">Dawood RCC Pipe — Karachi, Pakistan</div>
-              <ul class="timeline-achievements">
-                <li>Delivered desktop setup/troubleshooting and short user trainings with mini how-to guides.</li>
-                <li>Improved data hygiene and shared-drive organization; validated spreadsheets with basic checks.</li>
-              </ul>
-            </div>
+        <article class="t-item" data-animate="fadeInUp">
+          <div class="t-meta">
+            <span class="t-period">Jun 2021 – Jan 2022</span>
+            <span class="t-company">Dawood RCC Pipe — Karachi, Pakistan</span>
           </div>
+          <h3 class="t-role">Technology Co-op</h3>
+          <ul class="t-list">
+            <li>Delivered desktop setup/troubleshooting and short user trainings with mini how-to guides.</li>
+            <li>Improved data hygiene and shared-drive organization; validated spreadsheets with basic checks.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section container">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects">
+        <article class="p-card" data-animate="fadeInUp">
+          <header class="p-head">
+            <h3>React + TS Site on Netlify</h3>
+            <span>Website Specialist</span>
+          </header>
+          <p>Componentized UI updates, preview-to-prod workflows, and checklist-driven QA with GitHub issues and PRs.</p>
+          <ul class="tags compact">
+            <li>React</li><li>TypeScript</li><li>Netlify</li><li>GitHub</li>
+          </ul>
+        </article>
+
+        <article class="p-card" data-animate="fadeInUp">
+          <header class="p-head">
+            <h3>WordPress/Elementor Enhancements</h3>
+            <span>Developer</span>
+          </header>
+          <p>Reusable sections, clean navigation, forms with CSV/JSON exports, and basic SQL validations before CRM handoff.</p>
+          <ul class="tags compact">
+            <li>WordPress</li><li>Elementor</li><li>HTML/CSS/JS</li><li>SQL</li>
+          </ul>
+        </article>
+
+        <article class="p-card" data-animate="fadeInUp">
+          <header class="p-head">
+            <h3>QA & Tagging Starter</h3>
+            <span>Analyst</span>
+          </header>
+          <p>GA4 event conventions, UTMs, and DevTools checks with a simple test plan for links, forms, and alt text.</p>
+          <ul class="tags compact">
+            <li>GTM</li><li>GA4</li><li>Checklists</li><li>DevTools</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="section container">
+      <h2 class="section-title">Education</h2>
+      <div class="edu">
+        <div class="edu-main">
+          <div class="edu-line">
+            <span class="edu-inst">DePaul University</span>
+            <span class="edu-meta">Chicago, IL</span>
+          </div>
+          <div class="edu-line">
+            <span class="edu-degree">B.S., Information Technology</span>
+            <span class="edu-meta">Minor: Information Systems</span>
+          </div>
+          <div class="edu-facts">
+            <div><span class="k">Graduated</span><span class="v">June 2025</span></div>
+            <div><span class="k">GPA</span><span class="v">3.44</span></div>
+          </div>
+        </div>
+        <div class="edu-badges">
+          <span class="badge">Dean’s List — Winter 2023</span>
+          <span class="badge">Dean’s List — Winter 2024</span>
+          <span class="badge">Dean’s List — Spring 2024</span>
+          <span class="badge">Dean’s List — Winter 2025</span>
         </div>
       </div>
     </section>
 
-    <section id="projects" class="projects" data-animate="stagger">
-      <div class="container">
-        <h2 class="section-title">Projects</h2>
-        <div class="projects-grid">
-          <article class="project-card">
-            <div class="project-header">
-              <h3 class="project-title">React+TS Site on Netlify</h3>
-              <span class="project-role">Website Specialist</span>
-            </div>
-            <div class="project-body">
-              <p class="project-description">Componentized UI updates, preview-to-prod workflows, and checklist-driven QA with GitHub issues and PRs.</p>
-              <div class="project-technologies">
-                <span class="tech-tag">React</span><span class="tech-tag">TypeScript</span><span class="tech-tag">Netlify</span><span class="tech-tag">GitHub</span>
-              </div>
-            </div>
-          </article>
-          <article class="project-card">
-            <div class="project-header">
-              <h3 class="project-title">WordPress/Elementor Enhancements</h3>
-              <span class="project-role">Developer</span>
-            </div>
-            <div class="project-body">
-              <p class="project-description">Reusable sections, clean navigation, forms with CSV/JSON exports, and basic SQL validations before CRM handoff.</p>
-              <div class="project-technologies">
-                <span class="tech-tag">WordPress</span><span class="tech-tag">Elementor</span><span class="tech-tag">HTML/CSS/JS</span><span class="tech-tag">SQL</span>
-              </div>
-            </div>
-          </article>
-          <article class="project-card">
-            <div class="project-header">
-              <h3 class="project-title">QA & Tagging Starter</h3>
-              <span class="project-role">Analyst</span>
-            </div>
-            <div class="project-body">
-              <p class="project-description">GA4 event conventions, UTMs, and DevTools checks with a simple test plan for links, forms, and alt text.</p>
-              <div class="project-technologies">
-                <span class="tech-tag">GTM</span><span class="tech-tag">GA4</span><span class="tech-tag">Checklists</span><span class="tech-tag">DevTools</span>
-              </div>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="education" class="education">
-      <div class="container">
-        <h2 class="section-title">Education</h2>
-        <div class="education-card">
-          <div class="education-institution">DePaul University</div>
-          <div class="education-degree">B.S., Information Technology</div>
-          <div class="education-minor">Minor in Information Systems</div>
-          <div class="education-details">
-            <div class="education-info"><span class="info-label">Graduated:</span><span class="info-value">June 2025</span></div>
-            <div class="education-info"><span class="info-label">GPA:</span><span class="info-value">3.44</span></div>
-            <div class="education-info"><span class="info-label">Location:</span><span class="info-value">Chicago, IL</span></div>
+    <!-- CONTACT -->
+    <section id="contact" class="section container">
+      <h2 class="section-title">Contact</h2>
+      <p class="muted center">
+        Authorized to work in the U.S. (valid EAD; F-1 OPT/STEM-OPT eligible).
+        No sponsorship needed 2025–2028. Available for stakeholder calls, onboarding, release windows,
+        and occasional off-hours cutovers.
+      </p>
+      <div class="contact-cards">
+        <div class="c-card">
+          <div class="c-ic">
+            <svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
           </div>
-          <div class="achievements">
-            <h4 class="achievements-title">Dean's List</h4>
-            <div class="achievements-list">
-              <span class="achievement-badge">Winter 2023</span>
-              <span class="achievement-badge">Winter 2024</span>
-              <span class="achievement-badge">Spring 2024</span>
-              <span class="achievement-badge">Winter 2025</span>
-            </div>
+          <div class="c-body">
+            <div class="c-k">Email</div>
+            <a class="c-v" href="mailto:umeribrahimumer@hotmail.com">umeribrahimumer@hotmail.com</a>
           </div>
         </div>
-      </div>
-    </section>
-
-    <section id="contact" class="contact">
-      <div class="container">
-        <h2 class="section-title">Get In Touch</h2>
-        <div class="contact-content">
-          <p class="contact-intro">Authorized to work in the U.S. (valid EAD; F-1 OPT/STEM-OPT eligible). No sponsorship needed 2025–2028. Available for stakeholder calls, onboarding, release windows, and occasional off-hours cutovers.</p>
-          <div class="contact-methods">
-            <div class="contact-method">
-              <div class="contact-icon">
-                <!-- mail -->
-                <svg class="icon" viewBox="0 0 24 24" fill="none">
-                  <rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor"/>
-                  <path d="M3 7l9 6 9-6" stroke="currentColor"/>
-                </svg>
-              </div>
-              <div class="contact-details"><span class="contact-label">Email</span><a href="mailto:umeribrahimumer@hotmail.com" class="contact-value">umeribrahimumer@hotmail.com</a></div>
-            </div>
-            <div class="contact-method">
-              <div class="contact-icon">
-                <!-- phone -->
-                <svg class="icon" viewBox="0 0 24 24" fill="none">
-                  <path d="M6 3h3l2 4-2 2a12 12 0 0 0 7 7l2-2 4 2v3a2 2 0 0 1-2 2 17 17 0 0 1-15-15 2 2 0 0 1 1-1.7z" stroke="currentColor"/>
-                </svg>
-              </div>
-              <div class="contact-details"><span class="contact-label">Phone</span><a href="tel:+12246250528" class="contact-value">(224) 625-0528</a></div>
-            </div>
-            <div class="contact-method">
-              <div class="contact-icon">
-                <!-- location -->
-                <svg class="icon" viewBox="0 0 24 24" fill="none">
-                  <path d="M12 21s-7-6.5-7-11a7 7 0 1 1 14 0c0 4.5-7 11-7 11z" stroke="currentColor"/>
-                  <circle cx="12" cy="10" r="2.5" stroke="currentColor"/>
-                </svg>
-              </div>
-              <div class="contact-details"><span class="contact-label">Location</span><span class="contact-value">Chicago, IL<br><small>Open to Relocate</small></span></div>
-            </div>
+        <div class="c-card">
+          <div class="c-ic">
+            <svg viewBox="0 0 24 24"><path d="M6 3h3l2 4-2 2a12 12 0 0 0 7 7l2-2 4 2v3a2 2 0 0 1-2 2 17 17 0 0 1-15-15 2 2 0 0 1 1-1.7z"/></svg>
+          </div>
+          <div class="c-body">
+            <div class="c-k">Phone</div>
+            <a class="c-v" href="tel:+12246250528">(224) 625-0528</a>
+          </div>
+        </div>
+        <div class="c-card">
+          <div class="c-ic">
+            <svg viewBox="0 0 24 24"><path d="M12 21s-7-6.5-7-11a7 7 0 1 1 14 0c0 4.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+          </div>
+          <div class="c-body">
+            <div class="c-k">Location</div>
+            <div class="c-v">Chicago, IL • Open to Relocate</div>
           </div>
         </div>
       </div>
@@ -373,13 +330,14 @@
   </main>
 
   <footer class="footer">
-    <div class="container"><p>© 2025 Muhammad Umer</p></div>
+    <div class="container small muted">© 2025 Muhammad Umer</div>
   </footer>
 
   <script src="js/main.js"></script>
   <script src="js/animations.js"></script>
 </body>
 </html>
+
 
 
 
